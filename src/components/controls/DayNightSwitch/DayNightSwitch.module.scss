@@ -1,0 +1,40 @@
+@use "~/src/styles/colors.scss";
+
+.switchBox {
+  background: #fff;
+  // padding: 10px;
+  width: 127px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.switchBoxNight {
+  background: colors.$nightSwitchBg;
+  justify-content: flex-end;
+}
+
+.switchCircle {
+  display: block;
+  background: colors.$lightBlue;
+  border-radius: 50px;
+  padding: 0px;
+  width: 36px;
+  height: 36px;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+      hue-rotate(93deg) brightness(103%) contrast(103%);
+    width: 22px;
+    padding: 10px;
+  }
+}
