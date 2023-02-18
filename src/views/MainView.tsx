@@ -1,8 +1,11 @@
-import LeftSidebar from "@/components/layout/NavBar/LeftSidebar/LeftSidebar";
-import RightSidebar from "@/components/layout/NavBar/RightSidebar/RightSidebar";
-import NavBar from "@components/layout/NavBar";
-import styles from "./MainView.module.scss";
+import Particles from "@/components/animation/Particles";
+
 export const MainView: React.VoidFunctionComponent = () => {
-  return <div id="main-box"></div>;
+  return (
+    <div>
+      <Particles />
+    </div>
+  );
 };
+
 export default MainView;
