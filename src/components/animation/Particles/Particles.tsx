@@ -46,15 +46,6 @@ export const ParticlesBG: React.VoidFunctionComponent = () => {
               },
               resize: true,
             },
-            modes: {
-              push: {
-                quantity: 4,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
-              },
-            },
           },
           particles: {
             color: {
@@ -66,9 +57,6 @@ export const ParticlesBG: React.VoidFunctionComponent = () => {
               enable: true,
               opacity: 0.5,
               width: 1,
-            },
-            collisions: {
-              enable: true,
             },
             move: {
               direction: "none",
